@@ -1,0 +1,553 @@
+*
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif 'Rubik';
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body
+{
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+}
+footer
+{
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+}
+@media only screen and (min-width: 992px)
+{
+    .dropdown:hover .dropdown-menu
+{
+    display: block;
+}
+}
+nav, .dropdown-item
+{
+    font-size: 1rem;
+}
+.navbar-brand
+{
+    font-size: 1.5rem;
+    color: green;
+}
+.gradient
+{
+    background: rgb(0,128,0);
+    background: linear-gradient(37deg, rgba(0,128,0,1) 0%, rgba(18,201,91,1) 100%);
+}
+.page-header
+{
+    margin-top: 5.5rem;
+    font-size: 1.6rem;
+    color: white;
+}
+.rounded-pill
+{
+    border: 5px solid white;
+    box-shadow: 5px 5px black;
+}
+.text_logo
+{
+    font-size: 1.4rem;
+}
+.text_logo small
+{
+    font-size: 0.8rem;
+}
+#biodegradowalne
+{
+    
+    background-color: #84583b;
+}
+#ania
+{
+    list-style-type: none;
+}
+.tabele
+{
+    font-size: 1.2rem;
+}
+.loader
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden
+{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after
+{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #008000;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading
+{
+    from
+    {
+        transform: rotate(0turn);
+    }
+    to
+    {
+        transform: rotate(1turn);
+    }
+}
+.hidden
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#mail
+{
+    color: black;
+}
+#segregacja
+{
+    border: 5px solid white;
+    box-shadow: 5px 5px black;
+}
+#segregacja:hover
+{
+    width: 800px;
+    -webkit-transition: width 2s ease-out;
+    -moz-transition: width 2s ease-out;
+    -o-transition: width 2s ease-out;
+    transition: width 2s ease-out;
+}
+
+
+.contact h3
+{
+    font-weight: bold;
+}
+.page-header h2
+{
+    color: black;
+}
+.text_logo b
+{
+    color: #0a834d;
+}
+#logo
+{
+    width: 150px;
+}
+
+
+.byc_moze:nth-child(1)
+{
+    transition-delay: 100ms;
+}
+.byc_moze:nth-child(2)
+{
+    transition-delay: 300ms;
+}
+.byc_moze:nth-child(3)
+{
+    transition-delay: 500ms;
+}
+.byc_moze:nth-child(4)
+{
+    transition-delay: 700ms;
+}
+.byc_moze:nth-child(5)
+{
+    transition-delay: 900ms;
+}
+.byc_moze:nth-child(6)
+{
+    transition-delay: 1100ms;
+}
+
+@media(prefers-reduced-motion)
+{
+    .hidden
+    {
+        transition: none;
+    }
+}
+.contact_form
+{
+    font-size: 95%;
+}
+.img
+{
+    border-radius: .5rem;
+}
+.kategorie_karty a
+{
+    text-decoration: none;
+}
+.tekst_w_kategoriach
+{
+    font-size: 1.3rem;
+}
+.card_border
+{
+    border: 3px solid black;
+}
+#pszok1
+{
+    border: 3px solid black;
+    border-bottom: none;
+}
+#pszok2
+{
+    border: 3px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+#pszok3
+{
+    border: 3px solid black;
+    border-top: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px)
+{
+    #earth
+{
+  --s: 100px;   /* the size of the image */
+  --b: 8px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: green; /* the color */
+  
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#earth:hover
+{
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+#earth
+{
+    border-radius: 50%;
+}
+}
+
+#kosze_tekst
+{
+   color: #669706;  
+}
+
+.lokalizacja
+{
+    box-shadow: 10px 5px 5px gray;
+}
+
+@media only screen and (min-width: 1200px)
+{
+    #check
+{
+  --s: 15px;  /* size of the frame */
+  --b: 2px;   /* border thickness */
+  --w: 400px; /* width of the image */
+  --c: #669706;
+  
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+#check:hover
+{
+    outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+}
+}
+@media only screen and (min-width: 1200px)
+{
+    #kosze
+{
+  width: 400;
+  --g: 4px;     /* the gap */
+  --b: 12px;    /* border thickness*/
+  --c: #669706;
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: .3s;
+}
+#kosze:hover
+{
+    --_p: 75%;
+  filter: grayscale(0%);
+}
+}
+
+
+@media (max-width:1569px)
+{
+    html
+    {
+        font-size: 96%;
+    }
+}
+@media (max-width:1521px)
+{
+    html
+    {
+        font-size: 94%;
+    }
+}
+@media (max-width:1497px)
+{
+    html
+    {
+        font-size: 92%;
+    }
+}
+@media (max-width:1474px)
+{
+    html
+    {
+        font-size: 90%;
+    }
+}
+@media (max-width:1450px)
+{
+    html
+    {
+        font-size: 87%;
+    }
+    #logo
+    {
+        width: 50%;
+    }
+}
+@media (max-width:1395px)
+{
+    html
+    {
+        font-size: 84%;
+    }
+}
+@media (max-width:1358px)
+{
+    html
+    {
+        font-size: 80%;
+    }
+}
+@media (max-width:1305px)
+{
+    html
+    {
+        font-size: 76%;
+    }
+}
+
+@media (max-width:1240px)
+{
+    html
+    {
+        font-size: 74%;
+    }
+    #logo
+    {
+        width: 45%;
+    }
+}
+@media (max-width:1199px)
+{
+    #logo
+    {
+        width: 42%;
+    }
+}
+@media (max-width:1190px)
+{
+    html
+    {
+        font-size: 72%;
+    }
+}
+@media (max-width:1167px)
+{
+    html
+    {
+        font-size: 68%;
+    }
+}
+@media (max-width:1120px)
+{
+    html
+    {
+        font-size: 64%;
+    }
+}
+@media (max-width:1053px)
+{
+    html
+    {
+        font-size: 62%;
+    }
+}
+@media (max-width:1023px)
+{
+    html
+    {
+        font-size: 59%;
+    }
+}
+@media (max-width:991px)
+{
+    html
+    {
+        font-size: 0.7rem
+    }
+    .text_logo
+    {
+        font-size: 2rem;
+    }
+    .collapse, .nav-item, .btn
+    {
+        font-size: 1.3rem;
+    }
+    .szukaj
+    {
+        width: 25%;
+    }
+    .dropdown-item
+    {
+        font-size: .5rem;
+    }
+}
+@media (max-width:575px)
+{
+    .szukaj
+    {
+        width: 30%;
+        margin-right: 10px;
+    }
+}
+@media (max-width:500px)
+{
+    .authors
+    {
+        font-size: .5rem;
+    }
+    .collapse, .dropdown-item, .btn
+    {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:450px)
+{
+   .text_logo
+   {
+    font-size: 1.3rem;
+   }
+   #logo
+   {
+    width: 8.5rem;
+   }
+   .contact_form
+   {
+    font-size: 90%;
+   }
+   .collapse, .dropdown-item, .btn
+    {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:420px)
+{
+   .jakich
+   {
+    font-size: 1.3rem;
+   }
+}
+@media (max-width:395px)
+{
+   .jakich
+   {
+    font-size: 1.2rem;
+   }
+}
+@media (max-width:370px)
+{
+   .jakich
+   {
+    font-size: 1.15rem;
+   }
+}
+@media (max-width:355px)
+{
+   .jakich
+   {
+    font-size: 1.1rem;
+   }
+}
+@media (max-width:340px)
+{
+   .jakich
+   {
+    font-size: 1.05rem;
+   }
+}
+@media (max-width:325px)
+{
+   .jakich
+   {
+    font-size: 1rem;
+   }
+}
